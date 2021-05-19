@@ -6,6 +6,7 @@ var cors = require('cors');
 
 // routes
 const books = require('./routes/api/books');
+const blogs = require('./routes/api/blogs');
 
 const app = express();
 
@@ -17,11 +18,11 @@ app.use(cors({ origin: true, credentials: true }));
 
 // Init Middleware
 app.use(express.json({ extended: false }));
-
 app.get('/', (req, res) => res.send('Hello world!'));
 
 // use Routes
 app.use('/api/books', books);
+app.use('/api/blogs', blogs);
 
 const port = process.env.PORT || 8082;
 
