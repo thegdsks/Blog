@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "backend Application",
   "version": "1.0.0",
   "description": "This is a Blog Application",
   "main": "index.js",
